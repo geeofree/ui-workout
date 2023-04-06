@@ -1,0 +1,30 @@
+:root {
+  --text: #5b5b5b;
+}
+
+* {
+  font-family: "Inter",
+    -apple-system,BlinkMacSystemFont,
+    "Avenir Next",
+    Avenir,
+    "Nimbus Sans L",
+    Roboto,
+    "Noto Sans",
+    "Segoe UI",
+    Arial,Helvetica,
+    "Helvetica Neue",
+    sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+footer {
+  color: var(--text);
+  text-align: center;
+  padding: 1em;
+}

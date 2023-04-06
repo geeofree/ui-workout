@@ -1,0 +1,18 @@
+section.Banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+section.Banner > h1 {
+  margin-bottom: 1em;
+  font-weight: normal;
+}
+
+section.Banner > p {
+  max-width: 512px;
+  text-align: center;
+  color: var(--text);
+}

@@ -1,0 +1,16 @@
+{
+  "name": "ui-workout",
+  "version": "1.0.0",
+  "description": "My UI exercises site",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "NODE_ENV=production npx @11ty/eleventy"
+  },
+  "keywords": [],
+  "author": "Geo Galagaran <17492631+geeofree@users.noreply.github.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
