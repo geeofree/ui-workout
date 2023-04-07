@@ -1,0 +1,81 @@
+:root {
+  --max-content-width: 1024px;
+}
+
+nav.Navigation {
+  max-width: var(--max-content-width);
+  margin-top: 1em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+nav.Navigation > a > h1 {
+  color: black;
+  font-weight: normal;
+}
+
+nav.Navigation > p {
+  --nav-sep-margin: 0.25em;
+  font-size: 1.5em;
+  margin-left: var(--nav-sep-margin);
+  margin-right: var(--nav-sep-margin);
+}
+
+nav.Navigation > h1 {
+  font-weight: normal;
+  color: var(--text);
+}
+
+section.Showcase {
+  display: grid;
+  max-width: var(--max-content-width);
+  margin: 1em auto;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1em;
+}
+
+section.Showcase > a > div.ShowcaseItem {
+  display: block;
+  border-radius: 4px;
+  border: 1px solid var(--text);
+  --showcase-item-content-padding: 1em;
+}
+
+section.Showcase > a > div.ShowcaseItem > div.ShowcaseItemThumbnail {
+  position: relative;
+  width: 100%;
+  padding: var(--showcase-item-content-padding);
+}
+
+section.Showcase > a > div.ShowcaseItem > div.ShowcaseItemThumbnail:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+section.Showcase > a > div.ShowcaseItem > div.ShowcaseItemThumbnail > iframe {
+  width: 100%;
+}
+
+section.Showcase > a > div.ShowcaseItem > div.ShowcaseItemDescription {
+  border-top: 1px solid var(--text);
+  padding: var(--showcase-item-content-padding);
+}
+
+section.Showcase > a > div.ShowcaseItem > div.ShowcaseItemDescription > h1 {
+  font-size: 1.25em;
+  margin-bottom: 0.25em;
+  font-weight: normal;
+  color: black;
+}
+
+section.Showcase > a > div.ShowcaseItem > div.ShowcaseItemDescription > p {
+  color: var(--text);
+}

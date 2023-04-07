@@ -1,0 +1,29 @@
+---
+title: UI Showcase
+description: 'A list of UI/UX implementations'
+css: showcase.css
+---
+
+<nav class="Navigation">
+  <a href="/">
+    <h1>UI Workout</h1>
+  </a>
+  <p>/</p>
+  <h1>Showcase</h1>
+</nav>
+
+<section class="Showcase">
+  {% for showcase in collections.showcase %}
+  <a href="{{ showcase.url }}">
+    <div class="ShowcaseItem">
+      <div class="ShowcaseItemThumbnail">
+        <iframe src="{{ showcase.url}}" frameborder="0" loading="lazy" scrolling="no"></iframe>
+      </div>
+      <div class="ShowcaseItemDescription">
+        <h1>{{ showcase.data.title }}</h1>
+        <p>{{ showcase.data.description }}</p>
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</section>
