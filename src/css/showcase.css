@@ -67,6 +67,11 @@ section.Showcase > a > div.ShowcaseItem > div.ShowcaseItemThumbnail > iframe {
 section.Showcase > a > div.ShowcaseItem > div.ShowcaseItemDescription {
   border-top: 1px solid var(--text);
   padding: var(--showcase-item-content-padding);
+  transition-duration: 0.2s;
+}
+
+section.Showcase > a > div.ShowcaseItem:hover > div.ShowcaseItemDescription {
+  background-color: #e7e7e7;
 }
 
 section.Showcase > a > div.ShowcaseItem > div.ShowcaseItemDescription > h1 {
