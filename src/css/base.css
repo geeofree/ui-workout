@@ -1,5 +1,7 @@
 :root {
   --text: #5b5b5b;
+  --primary: #0284c7;
+  --primary2: #075985;
 }
 
 * {
@@ -27,4 +29,13 @@ footer {
   color: var(--text);
   text-align: center;
   padding: 1em;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--primary2);
 }
