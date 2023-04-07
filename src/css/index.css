@@ -3,7 +3,7 @@ section.Banner {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 4em);
 }
 
 section.Banner > h1 {
@@ -15,4 +15,21 @@ section.Banner > p {
   max-width: 512px;
   text-align: center;
   color: var(--text);
+}
+
+section.Banner > a > button {
+  font-size: 1em;
+  background-color: transparent;
+  padding: 0.5em;
+  margin-top: 1em;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+section.Banner > button:hover {
+  color: white;
+  background-color: var(--primary);
 }
