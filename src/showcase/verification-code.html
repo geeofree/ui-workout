@@ -1,6 +1,31 @@
 ---
 title: Verification Code
 description: 'Input for a verification code UI.'
+css: showcase/verification-code.css
+js: showcase/verification-code.js
 ---
 
-<h1>Th quick brown fox jumps over the lazy dog</h1>
+<main>
+  <section class="Content">
+    <label for="verification_code">Enter verification code:</label>
+    <div data-id="verification-code">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+    </div>
+  </section>
+  <section class="Features">
+    <p>Features:</p>
+    <ul>
+      <li>
+        <span class="bold">Sibling autofocus</span>: Entering alphanumeric characters focuses next sibling, deleting characters focuses previous sibling.
+      </li>
+      <li>
+        <span class="bold">Manual focus</span>: Pressing left or right arrow keys focuses the inputs to the left or right of the currently focused input.
+      </li>
+    </ul>
+  </section>
+</main>

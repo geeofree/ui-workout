@@ -1,0 +1,59 @@
+* {
+  font-family: "Inter",
+    -apple-system,BlinkMacSystemFont,
+    "Avenir Next",
+    Avenir,
+    "Nimbus Sans L",
+    Roboto,
+    "Noto Sans",
+    "Segoe UI",
+    Arial,Helvetica,
+    "Helvetica Neue",
+    sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div[data-id='verification-code'] {
+  display: grid;
+  grid-template-columns: repeat(6, 64px);
+  column-gap: 0.5em;
+}
+
+div[data-id='verification-code'] > input[type='text'] {
+  padding: 1em;
+  text-align: center;
+  font-size: 1.25em;
+  border: 1px solid #5b5b5b;
+  border-radius: 4px;
+}
+
+section.Content {
+  margin-bottom: 3em;
+}
+
+section.Content > label {
+  font-weight: normal;
+  margin-bottom: 1em;
+  display: block;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+section.Features > ul {
+  margin-top: 1em;
+  padding-left: 2em;
+}
+
+span.bold {
+  font-weight: bold;
+}
